@@ -1,0 +1,18 @@
+[2022/07/31-13:00:19]- First evaluation, 50/50 train/test split: HepG2
+[2022/07/31-13:00:20]- Looking for optimal hyperparameters...
+[2022/07/31-20:34:11]- Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/gbm/train_on_half_HepG2_hpp_search.pickle
+[2022/07/31-20:34:11]- Using hyperparameters:  {'max_features': 0.3, 'subsample': 0.999, 'min_samples_split': 144, 'min_samples_leaf': 19, 'max_depth': 17, 'learning_rate': 0.04326570553664424}
+[2022/07/31-20:34:12]- Train score:  0.879
+[2022/07/31-20:34:12]- Test score:  0.638
+[2022/07/31-20:34:12]- Computing Shapley values...
+[2022/08/01-01:00:32]- Shapley values saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/gbm/train_on_HepG2_test_on_HepG2_shapley_values.csv.gz
+[2022/08/01-01:00:32]-
+[2022/08/01-01:00:32]- Second evaluation, train on  HepG2  evaluate on  K562
+[2022/08/01-01:00:33]- Looking for optimal hyperparameters...
+[2022/08/01-12:07:32]- Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/gbm/train_on_full_HepG2_hpp_search.pickle
+[2022/08/01-12:07:32]- Using hyperparameters:  {'max_features': 0.5, 'subsample': 0.7, 'min_samples_split': 46, 'min_samples_leaf': 35, 'max_depth': 16, 'learning_rate': 0.038205406013208876}
+[2022/08/01-12:07:32]- Train score:  0.846
+[2022/08/01-12:07:32]- Test score:  0.539
+[2022/08/01-12:07:32]- Test score on common genes:  0.425
+[2022/08/01-12:07:32]- Test score on genes unique for the test cell line (K562): 0.524
+[2022/08/01-12:07:32]-

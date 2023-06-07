@@ -1,0 +1,32 @@
+First evaluation, 50/50 train/test split: HepG2
+Using best hyperparameters:  {'alpha': 2800}
+Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_half_HepG2_model.pickle
+Train score:  0.659
+Test score:  0.541
+Computing Shapley values...
+Shapley values saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_HepG2_test_on_HepG2_shapley_values.csv.gz
+
+First evaluation, 50/50 train/test split: K562
+Using best hyperparameters:  {'alpha': 2800}
+Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_half_K562_model.pickle
+Train score:  0.739
+Test score:  0.601
+Computing Shapley values...
+Shapley values saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_K562_test_on_K562_shapley_values.csv.gz
+
+Second evaluation, train on  HepG2  evaluate on  K562
+Using best hyperparameters:  {'alpha': 2800}
+Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_full_HepG2_model.pickle
+Train score:  0.603
+Test score:  0.422
+Test score on common genes:  0.241
+Test score on genes unique for the test cell line (K562): 0.477
+
+Second evaluation, train on  K562  evaluate on  HepG2
+Using best hyperparameters:  {'alpha': 2800}
+Model saved to:  /lustre/groups/epigenereg01/workspace/projects/vale/pausing/linear_regression/train_on_full_K562_model.pickle
+Train score:  0.664
+Test score:  0.445
+Test score on common genes:  0.377
+Test score on genes unique for the test cell line (HepG2): 0.451
+
